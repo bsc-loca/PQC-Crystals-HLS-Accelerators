@@ -6,13 +6,13 @@ This technology implements a PQC accelerator for FPGA-based SoCs using HLS. It s
 ```
 LICENSE
 README.md
+setenv.sh                  # Environment setup script for Vitis-HLS 2021.2 
 mldsa/
     hlsIntegration/
         k_dsa.cpp          # High-level synthesis (HLS) implementation for ML-DSA
         kernel.hpp         # Header file for ML-DSA kernel
         Makefile           # Build instructions for ML-DSA HLS, prepared for synthesis on the SELENE SoC
         README.md          # Documentation for ML-DSA module
-        setenv.sh          # Environment setup script for ML-DSA
         scripts/
             mldsa2.tcl     # TCL script for ML-DSA synthesis
     src/
@@ -25,7 +25,6 @@ mlkem/
         kernel.hpp         # Header file for ML-KEM kernel
         Makefile           # Build instructions for ML-KEM HLS, prepared for synthesis on the SELENE SoC
         README.md          # Documentation for ML-KEM module
-        setenv.sh          # Environment setup script for ML-KEM
         scripts/
             mlkem512.tcl   # TCL script for ML-KEM synthesis
     src/
@@ -41,14 +40,14 @@ This module implements FPGA-based ML-DSA cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mldsa/README.md](mldsa/hlsIntegration/README.md) for detailed instructions on building and testing the ML-DSA module.
+Refer to the [mldsa/hlsIntegration/README.md](mldsa/hlsIntegration/README.md) for detailed instructions on building and testing the ML-DSA module.
 
 ### `mlkem` - CRYSTALS-Kyber (ML-KEM)
 This module implements FPGA-based ML-KEM cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mlkem/README.md](mlkem/hlsIntegration/README.md) for detailed instructions on building and testing the ML-KEM module.
+Refer to the [mlkem/hlsIntegration/README.md](mlkem/hlsIntegration/README.md) for detailed instructions on building and testing the ML-KEM module.
 
 ## Prerequisites
 
@@ -63,10 +62,9 @@ Refer to the [mlkem/README.md](mlkem/hlsIntegration/README.md) for detailed inst
    cd PQC-Crystals-HLS-Accelerators 
    ```
 
-2. Set up the environment for the desired module:
+2. Set up the environment to your PATH:
    ```bash
-   source mldsa/hlsIntegration/setenv.sh  # For ML-DSA
-   source mlkem/hlsIntegration/setenv.sh  # For ML-KEM
+   source setenv.sh 
    ```
 
 3. Build the HLS code:
