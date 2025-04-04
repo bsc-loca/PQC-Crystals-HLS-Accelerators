@@ -78,11 +78,6 @@ Refer to the [mlkem/README.md](mlkem/README.md) for detailed instructions on bui
    make  # For ML-KEM
    ```
 
-## License
-
-This project is licensed under the [Solderpad Hardware License v0.51](http://solderpad.org/licenses/SHL-0.51/).
-See the [LICENSE](./LICENSE) file for more details.
-
 ## Contact
 
 For questions or support, please contact the repository maintainers.
