@@ -59,8 +59,8 @@ Refer to the [mlkem/README.md](mlkem/README.md) for detailed instructions on bui
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/bsc-loca/PQC-Crystals-HLS-Accelerators.git 
+   cd PQC-Crystals-HLS-Accelerators 
    ```
 
 2. Set up the environment for the desired module:
