@@ -41,14 +41,14 @@ This module implements FPGA-based ML-DSA cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mldsa/README.md](mldsa/README.md) for detailed instructions on building and testing the ML-DSA module.
+Refer to the [mldsa/README.md](mldsa/hlsIntegration/README.md) for detailed instructions on building and testing the ML-DSA module.
 
 ### `mlkem` - CRYSTALS-Kyber (ML-KEM)
 This module implements FPGA-based ML-KEM cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mlkem/README.md](mlkem/README.md) for detailed instructions on building and testing the ML-KEM module.
+Refer to the [mlkem/README.md](mlkem/hlsIntegration/README.md) for detailed instructions on building and testing the ML-KEM module.
 
 ## Prerequisites
 
