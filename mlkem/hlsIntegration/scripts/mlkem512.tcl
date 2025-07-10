@@ -1,8 +1,3 @@
-############################################################
-## This file is generated automatically by Vitis HLS.
-## Please DO NOT edit it.
-## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-############################################################
 set parent_dir [pwd]
 open_project mlkem
 set_top mlkem_accelerator
