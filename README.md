@@ -76,6 +76,12 @@ Refer to the [mlkem/hlsIntegration/README.md](mlkem/hlsIntegration/README.md) fo
    make  # For ML-KEM
    ```
 
+## Integrations
+
+A public integration of both accelerators has been done into the SELENE SoC. You can find it and generate a bitstream for the AMD Virtex™ UltraScale+™ FPGA VCU118 here: [https://gitlab.com/selene-riscv-platform/selene-hardware/-/tree/ft/PQC](https://gitlab.com/selene-riscv-platform/selene-hardware/-/tree/ft/PQC).
+
+An example software is also available here: [https://gitlab.com/selene-riscv-platform/selene-software](https://gitlab.com/selene-riscv-platform/selene-software)
+
 ## Contact
 
 For questions or support, please contact the repository maintainers.
