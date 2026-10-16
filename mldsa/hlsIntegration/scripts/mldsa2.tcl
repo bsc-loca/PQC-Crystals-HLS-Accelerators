@@ -1,9 +1,14 @@
+############################################################
+## This file is generated automatically by Vitis HLS.
+## Please DO NOT edit it.
+## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+############################################################
 set parent_dir [pwd]
 open_project mldsa
 set_top mldsa_accelerator
 #Check
-add_files k_dsa.cpp
-add_files kernel.hpp -cflags -DDILITHIUM_MODE=2
+add_files k_dsa.cpp -cflags "-DDILITHIUM_MODE=2"
+add_files kernel.hpp
 open_solution "mldsa2" -flow_target vivado
 set_part {xcu280-fsvh2892-2L-e}
 create_clock -period 300MHz -name default

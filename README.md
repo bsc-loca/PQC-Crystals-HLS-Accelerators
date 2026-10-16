@@ -14,7 +14,9 @@ mldsa/
         Makefile           # Build instructions for ML-DSA HLS, prepared for synthesis on the SELENE SoC
         README.md          # Documentation for ML-DSA module
         scripts/
-            mldsa2.tcl     # TCL script for ML-DSA synthesis
+            mldsa2.tcl     # TCL script for ML-DSA-44 parameter set synthesis
+            mldsa3.tcl     # TCL script for ML-DSA-65 parameter set synthesis
+            mldsa5.tcl     # TCL script for ML-DSA-87 parameter set synthesis
     src/
         mldsa_kernel.vhd   # AXI Wrapper to VHDL implementation of the ML-DSA kernel
         mldsa_pkg.vhd      # AXI VHDL package for ML-DSA
@@ -26,7 +28,9 @@ mlkem/
         Makefile           # Build instructions for ML-KEM HLS, prepared for synthesis on the SELENE SoC
         README.md          # Documentation for ML-KEM module
         scripts/
-            mlkem512.tcl   # TCL script for ML-KEM synthesis
+            mlkem512.tcl   # TCL script for ML-KEM-512 parameter set synthesis
+            mlkem768.tcl   # TCL script for ML-KEM-768 parameter set synthesis
+            mlkem1024.tcl   # TCL script for ML-KEM-1024 parameter set synthesis
     src/
         mlkem_kernel.vhd   # AXI Wrapper to VHDL implementation of the ML-KEM kernel
         mlkem_pkg.vhd      # AXI VHDL package for ML-KEM
@@ -40,14 +44,14 @@ This module implements FPGA-based ML-DSA cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mldsa/hlsIntegration/README.md](mldsa/hlsIntegration/README.md) for detailed instructions on building and testing the ML-DSA module.
+Refer to the [mldsa/hlsIntegration/README.md](mldsa/hlsIntegration/README.md) for detailed instructions on building and testing the ML-DSA module and [https://openquantumsafe.org/liboqs/algorithms/sig/ml-dsa.html](https://openquantumsafe.org/liboqs/algorithms/sig/ml-dsa.html) for information of the parameter set.
 
 ### `mlkem` - CRYSTALS-Kyber (ML-KEM)
 This module implements FPGA-based ML-KEM cryptographic operations. It includes:
 - High-Level Synthesis (HLS) code in `hlsIntegration/`.
 - AXI VHDL implementation in `src/`.
 
-Refer to the [mlkem/hlsIntegration/README.md](mlkem/hlsIntegration/README.md) for detailed instructions on building and testing the ML-KEM module.
+Refer to the [mlkem/hlsIntegration/README.md](mlkem/hlsIntegration/README.md) for detailed instructions on building and testing the ML-KEM module and [https://openquantumsafe.org/liboqs/algorithms/kem/ml-kem.html](https://openquantumsafe.org/liboqs/algorithms/kem/ml-kem.html) for information of the parameter set.
 
 ## Prerequisites
 

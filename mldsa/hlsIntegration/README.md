@@ -11,4 +11,8 @@ To generate the accelerator, run:
 make mldsa2
 ```
 
+> **Note:** For different security level: `make mldsa3` or `make mldsa5`
+
+
+
 The Makefile will configure the **MLDSA in SELENE PLATFORM** to be synthesized with **Vivado 2020.2** by executing the appropriate `make` command in `selene-soc/selene-xilinx-vcu118`.

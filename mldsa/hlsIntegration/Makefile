@@ -1,15 +1,17 @@
+TARGETS = mldsa2 mldsa3 mldsa5
+
 default : mldsa2
 
 SRC_HLS = k_dsa.cpp
 
-.PHONY: default all
+.PHONY: default clean $(TARGETS)
 
-mldsa2: $(SRC_HLS)
+$(TARGETS): $(SRC_HLS)
 	rm -f ../src/*.v
 	rm -f ../src/*.vh
 	rm -f ../src/*.dat
 	rm -f ../src/vlogsyn.txt
-	vitis_hls -f scripts/mldsa2.tcl
+	vitis_hls -f scripts/$@.tcl
 	rm -rf rtl/$@
 	mkdir -p rtl/$@
 	unzip mldsa/$@/export.zip -d rtl/$@
