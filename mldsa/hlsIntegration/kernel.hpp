@@ -57,6 +57,28 @@
 #define OMEGA 80
 #define CTILDEBYTES 32
 
+#elif DILITHIUM_MODE == 3
+#define K 6
+#define L 5
+#define ETA 4
+#define TAU 49
+#define BETA 196
+#define GAMMA1 (1 << 19)
+#define GAMMA2 ((Q-1)/32)
+#define OMEGA 55
+#define CTILDEBYTES 48
+
+#elif DILITHIUM_MODE == 5
+#define K 8
+#define L 7
+#define ETA 2
+#define TAU 60
+#define BETA 120
+#define GAMMA1 (1 << 19)
+#define GAMMA2 ((Q-1)/32)
+#define OMEGA 75
+#define CTILDEBYTES 64
+
 #endif
 
 #define POLYT1_PACKEDBYTES  320

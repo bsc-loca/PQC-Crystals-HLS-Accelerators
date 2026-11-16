@@ -1,15 +1,17 @@
+TARGETS = mlkem512 mlkem768 mlkem1024
+
 default : mlkem512
 
 SRC_HLS = k_kem.cpp
 
-.PHONY: default all
+.PHONY: default clean $(TARGETS)
 
-mlkem512: $(SRC_HLS)
+$(TARGETS): $(SRC_HLS)
 	rm -f ../src/*.v
 	rm -f ../src/*.vh
 	rm -f ../src/*.dat
 	rm -f ../src/vlogsyn.txt
-	vitis_hls -f scripts/mlkem512.tcl
+	vitis_hls -f scripts/$@.tcl
 	rm -rf rtl/$@
 	mkdir -p rtl/$@
 	unzip mlkem/$@/export.zip -d rtl/$@

@@ -1,7 +1,12 @@
+############################################################
+## This file is generated automatically by Vitis HLS.
+## Please DO NOT edit it.
+## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+############################################################
 set parent_dir [pwd]
 open_project mlkem
 set_top mlkem_accelerator
-add_files k_kem.cpp
+add_files k_kem.cpp -cflags "-DKYBER_K=2"
 add_files kernel.hpp
 open_solution "mlkem512" -flow_target vivado
 set_part {xcu280-fsvh2892-2L-e}

@@ -3066,7 +3066,7 @@ readmemVer(s_mu_1, mu_1, CRHBYTES);
 repeatg<CRHBYTES>(s_mu_1_r, s_mu_1);
 shake_mu_p(s_sig, s_mu_1_r, s_p); //check how to share all shakes
 
-duplicateVer(s_sig_0, s_sig_1, s_sig, SEEDBYTES);
+duplicateVer(s_sig_0, s_sig_1, s_sig, CTILDEBYTES);
 
 challengeVer(s_cp, s_sig_0, s_signal_ch);
 nttVer(s_cp_t, s_cp, 1);
